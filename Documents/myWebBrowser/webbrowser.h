@@ -14,22 +14,14 @@ class WebBrowser : public QMainWindow
 public:
     WebBrowser(QWidget *parent = nullptr);
     ~WebBrowser();
+
 private slots:
     void onAddressBarEnterPressed();
+    void onUrlChanged(const QUrl & url);
+    void titleChanged();
 private:
     Ui::WebBrowser *ui;
 };
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
 
-public:
-    MainWindow(QString *parent = nullptr);
-    ~MainWindow();
-private slots:
-    void onUrlChanged();
-private:
-    Ui::WebBrowser *ui;
-};
 
 #endif // WEBBROWSER_H

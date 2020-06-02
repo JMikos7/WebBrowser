@@ -25,15 +25,15 @@ void WebBrowser::onAddressBarEnterPressed()
 {
     ui->webView->load(QUrl(ui->addressBar->text()));
 }
-void MainWindow::onUrlChanged(const QUrl & url)
+void WebBrowser::onUrlChanged(const QUrl & url)
 {
     ui->addressBar->setText(url.toString());
 }
-WebBrowser::~WebBrowser()
+void WebBrowser::titleChanged()
 {
-    delete ui;
+
 }
-MainWindow::~MainWindow()
+WebBrowser::~WebBrowser()
 {
     delete ui;
 }
