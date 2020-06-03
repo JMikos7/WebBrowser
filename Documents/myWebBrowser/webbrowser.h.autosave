@@ -20,8 +20,6 @@ private slots:
     void onAddressBarEnterPressed();
     void onUrlChanged(const QUrl & url);
     void titleChanged();
-    void QWebEngineHistory::back();
-    void QWebEngineHistory::forward();
 private:
     Ui::WebBrowser *ui;
 };

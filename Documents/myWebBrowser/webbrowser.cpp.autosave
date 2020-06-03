@@ -33,6 +33,14 @@ void WebBrowser::titleChanged()
 {
     ui->webView->setWindowTitle("Web Browser");
 }
+void QWebEngineHistory::back()
+{
+    
+}
+void QWebEngineHistory::forward()
+{
+    
+}
 WebBrowser::~WebBrowser()
 {
     delete ui;
