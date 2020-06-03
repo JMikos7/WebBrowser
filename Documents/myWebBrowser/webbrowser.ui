@@ -69,22 +69,5 @@
   </customwidget>
  </customwidgets>
  <resources/>
- <connections>
-  <connection>
-   <sender>refreshButton</sender>
-   <signal>clicked()</signal>
-   <receiver>addressBar</receiver>
-   <slot>update()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>101</x>
-     <y>163</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>456</x>
-     <y>163</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
